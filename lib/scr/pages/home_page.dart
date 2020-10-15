@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Mocion Challegue"),
+          title: Text("Test Challegue"),
         ),
         backgroundColor: Color.fromRGBO(50, 50, 50, 1.0),
         body: initPage(context, changeTheme));
