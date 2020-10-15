@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   ) {
     return MaterialApp(
         theme: ThemeData.light(),
-        title: 'Mocion',
+        title: 'Test App',
         debugShowCheckedModeBanner: false,
         initialRoute: 'home',
         routes: {
