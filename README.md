@@ -32,3 +32,5 @@ The test contains 10 question, you response option is true or false.
 Your answers is evaluated and generate your qualification. You can start a new test if you want.
 
 ![Screenshot](Qualification.png)
+
+Enjoy!
