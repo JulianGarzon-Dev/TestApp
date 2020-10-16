@@ -92,9 +92,17 @@ class _TestState extends State<TestsPage> {
         SizedBox(
           height: _screenSize.height * 0.03,
         ),
-        Text(
-          (_filter2['question']),
-          style: TextStyle(fontSize: 20),
+        Container(
+          padding: EdgeInsets.all(10.0),
+          child: Column(
+            children: <Widget>[
+              Text(
+                (_filter2['question']),
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
         Divider(),
         ListView.builder(

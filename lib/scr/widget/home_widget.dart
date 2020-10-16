@@ -12,34 +12,39 @@ Widget initPage(BuildContext context, changeTheme) {
   return Center(
     child: Column(
       children: <Widget>[
-        SizedBox(height: _screenSize.height * 0.05),
+        SizedBox(height: _screenSize.height * 0.1),
         Text(
           ("Welcome to the\nTrivia Challengue"),
           style: TextStyle(color: Colors.white, fontSize: 22),
         ),
-        SizedBox(height: _screenSize.height * 0.17),
+        SizedBox(height: _screenSize.height * 0.12),
         Text(("You will be presented"),
             style: TextStyle(color: Colors.white, fontSize: 22)),
         Text(("with 10 True or False"),
             style: TextStyle(color: Colors.white, fontSize: 22)),
         Text(("question"), style: TextStyle(color: Colors.white, fontSize: 22)),
-        SizedBox(height: _screenSize.height * 0.17),
+        SizedBox(height: _screenSize.height * 0.12),
         Text(("¿Can you Score 100%?"),
             style: TextStyle(color: Colors.white, fontSize: 22)),
-        SizedBox(height: _screenSize.height * 0.17),
-        SignInButtonBuilder(
-          text: "BEGIN",
-          icon: Icons.note,
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => TestsPage()),
-            );
-          },
-          backgroundColor: Colors.blueGrey[700],
-          width: _screenSize.width * 0.5,
-          height: _screenSize.height * 0.050,
-        ),
+        SizedBox(height: _screenSize.height * 0.12),
+        RaisedButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => TestsPage()));
+            },
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.0)),
+            color: Colors.white,
+            textColor: Colors.black,
+            padding: EdgeInsets.all(0.0),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 10.0),
+              child: Text(
+                'BEGIN',
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.center,
+              ),
+            )),
       ],
     ),
   );
